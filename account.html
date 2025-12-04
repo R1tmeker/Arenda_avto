@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный кабинет — Индекс Драйв</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <svg viewBox="0 0 120 80" aria-hidden="true">
+        <rect x="10" y="34" width="90" height="28" rx="10" fill="#b9c2d3" />
+        <rect x="18" y="20" width="74" height="22" rx="8" fill="#dfe5ef" />
+        <circle cx="32" cy="64" r="9" fill="#1e232c" />
+        <circle cx="82" cy="64" r="9" fill="#1e232c" />
+      </svg>
+      <div class="logo-title">
+        <strong>Индекс Драйв</strong>
+        <span>Ваш надежный выбор</span>
+      </div>
+    </div>
+    <nav>
+      <a href="branches.html">Филиалы</a>
+      <a href="cars.html">Бронирование</a>
+      <a href="cards.html">Банковские карты</a>
+      <a href="login.html">Выйти</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <div class="grid-2">
+      <div class="list-block">
+        <div class="card">
+          <h2 style="margin-top:0;">Личные данные</h2>
+          <div class="form-grid">
+            <label>ФИО
+              <input type="text" value="Кубышкина Елизавета Алексеевна">
+            </label>
+            <label>Телефон
+              <input type="text" value="88005553551">
+            </label>
+            <label>Паспортные данные
+              <input type="text" value="0125 123456">
+            </label>
+            <label>Дата рождения
+              <input type="text" value="2004-04-01">
+            </label>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0;">Мои бронирования</h3>
+          <div class="booking-card">
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span class="tag" style="background:#ecf2ff;color:#3a54c3;">Код001</span>
+              <strong>BMW</strong>
+            </div>
+            <p style="margin:6px 0; font-weight:600;">ID авто: CAR001</p>
+            <div style="color:#606570; font-size:14px; display:grid; gap:4px;">
+              <span>Дата: 2025-06-21</span>
+              <span>Бронирование: Центральный</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="action-card">
+        <h3 style="margin-top:0;">Действия</h3>
+        <a class="button-primary" href="cards.html" style="display:block;text-align:center;background:#f3f5f9;color:#1f232b;">Банковские карты</a>
+        <a class="button-primary" href="history.html" style="display:block;text-align:center;background:#f3f5f9;color:#1f232b;">История бронирования</a>
+        <a class="button-primary" href="cars.html" style="display:block;text-align:center;">Новое бронирование</a>
+        <a class="button-primary" href="login.html" style="display:block;text-align:center;background:#f3f5f9;color:#1f232b;">Выйти из аккаунта</a>
+      </aside>
+    </div>
+  </main>
+
+  <div class="modal" id="add-card-modal">
+    <div class="modal-content">
+      <a class="modal-close" href="#">×</a>
+      <h3 style="margin-top:0;">Добавление банковской карты</h3>
+      <div class="form-grid">
+        <label>Номер карты
+          <input type="text" placeholder="1111 2222 3333 4444">
+        </label>
+        <label>Имя и фамилия держателя
+          <input type="text" placeholder="IVAN IVANOV">
+        </label>
+        <label>Срок действия
+          <input type="text" placeholder="MM/ГГ">
+        </label>
+        <label>CVV/CVC
+          <input type="text" placeholder="123">
+        </label>
+      </div>
+      <div class="form-actions">
+        <button class="button-primary" style="width:100%;">Добавить</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <div>
+        <h4>Индекс Драйв</h4>
+        <p style="margin:0 0 8px;">Надежный сервис аренды автомобилей</p>
+        <div>8 (800) 555-35-35</div>
+      </div>
+      <div>
+        <h4>Навигация по сайту</h4>
+        <ul>
+          <li><a href="index.html">Главная страница</a></li>
+          <li><a href="login.html">Вход в личный кабинет</a></li>
+          <li><a href="registration.html">Регистрация</a></li>
+          <li><a href="account.html">Личный кабинет</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>&nbsp;</h4>
+        <ul>
+          <li><a href="branches.html">Филиалы</a></li>
+          <li><a href="cars.html">Бронирование</a></li>
+          <li><a href="cards.html">Банковские карты</a></li>
+          <li><a href="history.html">История бронирования</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© Индекс Драйв 2025. Все права защищены.</div>
+  </footer>
+</body>
+</html>
